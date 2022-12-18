@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;500;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+    <title>CV</title>
+</head>
+<body>
+    <header class = "header">
+        <div class="container">
+                <nav class="nav">
+                    <ul class="nav-list">
+                        <li class="nav-item"><a href="#contacts" class="nav-link">Contacts</a></li>
+                        <li class="nav-item"><a href="#about" class="nav-link">About</a></li>
+                        <li class="nav-item"><a href="#code" class="nav-link">Code</a></li>
+                        <li class="nav-item"><a href="#education" class="nav-link">Education</a></li>
+                        <li class="nav-item"><a href="#english" class="nav-link">English</a></li>
+                    </ul>
+                </nav>
+        </div>
+    </header>
+    <main class="main main-container">
+        <div class="container">
+            <section class="section" id="profile">
+                <div class="container-profile">
+                    <h1>Anna Kolesnichenko</h1>
+                    <h2>Junior front-end developer</h2>
+                </div>
+                <div class="my-photo">
+                    <img class="photo" src="./DSCN0227.JPG" alt="my-photo">
+                </div>
+            </section>
+            <section class="section" id="main-contacts">
+                <div class="contact">
+                    <h3 class="section-title" id="contacts">Contacts</h3>
+                    <ul class="main-contacts-section">
+                        <li>Minsk, Republic of Belarus</li>
+                        <li>Email: Anna-Vladi-2017@yandex.by</li>
+                        <li>Github: Anna-Veresk</li>
+                        <li>Telegram: @Annushka250</li>
+                    </ul>
+                </div>
+                <div class="about-section">
+                    <h3 class="section-title" id="about">About</h3>
+                    <p>I was born on May 24th. IM 42 years old. I have a husband and two sons.</p>
+                    <p>When I was at school, I had a dream. Become a programmer.
+                        And only now I have begun to fulfill my dream.</p>
+                    <p>In 2021, I graduated from Python courses. But the front-end fascinated me more.</p>
+                    <p>I have little experience in developing telegram bots and site administration.
+                        Have experience with: VS Code, Web Storm, PyCharm.
+                        In my work I used the following libraries: TelegramAPI, Aiogramm</p>
+                </div>
+            </section>
+            <section class="section" id="main-code">
+                <div class="code-section">
+                    <h3 class="section-title" id="code">Code</h3>
+                    <pre><code>@dp.message_handler(Command('test'), state=None)
+                        async def process_input(message: types.Message):
+                        print('Ждем логин')
+                        await message.answer('Введите логин')
+                        print('1')
+                        await Admin.login.set()
+                        print('2')
+                    </code></pre>
+                </div>
+            </section>
+            <section class="section" id="main-education">
+                <div class="education-section">
+                    <h3 class="section-title" id="education">Education</h3>
+                    <ul>
+                        <li>Foreign Economic Non-State College</li>
+                        <li>Minsk State Trade College</li>
+                        <li>Private Institute of Management and Entrepreneurship</li>
+                        <li>IT school Overone</li>
+                        <li>IT school WayUP</li>
+                    </ul>
+                </div>
+            </section>
+            <section class="section" id="main-english">
+                <div class="english-section">
+                    <h3 class="section-title" id="english">English</h3>
+                    <p>my level of English A2</p>
+                </div>
+            </section>
+        </div>
+    </main>
+    <footer class="footer">
+        <div class="container-footer">
+            <div class="copyright">
+                <p><a class="git" href="https://github.com/Anna-Veresk">© 2022 Anna Kolesnichenko</a></p>
+            </div>
+            <div class="logo-section">
+                <a href="https://rs.school/js/"><img src="/img/rs_school_js.svg" alt="logo" class="logo"></a>
+            </div>
+        </div>
+    </footer>
+</body>
+</html>
